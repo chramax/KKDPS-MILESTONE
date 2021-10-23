@@ -1,0 +1,54 @@
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+nav li{
+    display: inline-block;
+    font-size: 24px;
+}
+nav ul{
+    white-space: normal;
+}
+body {
+    padding-top: 150px;
+    background-color: darkgray;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+}
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    
+}
+
+nav span {
+    display: block
+}
+
+nav .subtitle {
+    font-size: 14px;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+div.title h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+div.title h2{
+    margin-top: 0px;
+}
+
+div.parts p{
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+}
