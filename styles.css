@@ -28,6 +28,11 @@ nav .subtitle {
     font-size: 14px;
 }
 
+div .greeting p{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 nav{
     position: sticky ;
     background-color: #8b8b8b;
