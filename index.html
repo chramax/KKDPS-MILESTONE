@@ -23,37 +23,37 @@
         <br>
         <nav>
         <ul style="list-style-type:none;" class="navigation">
-            <li><a href="#cpu" id="cpuLink">
+            <li><a href="#cpu" id="cpuNav">
                 <span>CPU</span>
                 <span class="subtitle">(Central processing unit)</span>
             </a></li>
-            <li><a href="#ram">
+            <li><a href="#ram" id="ramNav">
                 <span>RAM</span>
                 <span class="subtitle">(Random accsess memory)</span>
             </a></li>
-            <li><a href="#ssd">
+            <li><a href="#ssd" id="ssdNav">
                 <span>SSD</span>
                 <span class="subtitle">(Solid state drive)</span>
             </a></li>
-            <li><a href="#motherboard">
-                <span>Mobo</span>
-                <span class="subtitle">(Motherboard)</span>
+            <li><a href="#motherboard" id="motherboardNav">
+                <span>Motherboard</span>
+                <span class="subtitle">&nbsp;</span>
             </a></li>
-            <li><a href="#gpu">
+            <li><a href="#gpu" id="gpuNav">
                 <span>GPU</span>
                 <span class="subtitle">(Graphics processing unit)</span>
             </a></li>
-            <li><a href="#case" title="test">
+            <li><a href="#case" id="caseNav">
                 <span>Case</span>
                 <span class="subtitle">&nbsp;</span>
             </a></li>
-            <li><a href="#cpuCooler">
+            <li><a href="#cpuCooler" id="cpuCoolerNav">
                 <span>CPU Cooler</span>
                 <span class="subtitle">(Central processing unit cooler)</span>
             </a></li>
-            <li><a href="#psu">
+            <li><a href="#psu" id="psuNav">
                 <span>PSU</span>
-                <span class="subtitle">(Power suplly unit)</span>
+                <span class="subtitle">(Power supply unit)</span>
             </a></li>
         </ul>
         </nav>
@@ -118,11 +118,38 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/tippy.js@6/animations/scale.css"
+/>
+
 <script>
     // With the above scripts loaded, you can call `tippy()` with a CSS
     // selector and a `content` prop:
-    tippy('#cpuLink', {
+    tippy('#cpuNav', {
       content: 'Central processing unit',
+    });
+    tippy('#ramNav', {
+      content: 'Random access memory',
+    });
+    tippy('#ssdNav', {
+      content: 'Solid-state drive',
+    });
+    tippy('#motherboardNav', {
+      content: 'Motherboard',
+    });
+    tippy('#gpuNav', {
+      content: 'Graphics processing unit',
+    });
+    tippy('#caseNav', {
+      content: 'Case',
+    });
+    tippy('#cpuCoolerNav', {
+      content: 'Central processing unit cooler',
+    });
+    tippy('#psuNav', {
+      content: 'Power supply unit',
     });
 </script>
 </body>
