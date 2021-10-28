@@ -77,3 +77,33 @@ div.footer a button{
     border: 0;
     cursor: grab;     
 }
+
+div.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    margin: auto;
+}
+
+div.sectionRight{
+    display: grid;
+    grid-template-rows: 44px 1fr;
+    padding-left: 30px;
+
+}
+
+div.section img{
+    width: 100%;
+}
+
+div.section p{
+    width: 100%;
+}
+
+div.section h1{
+    margin: 0;
+}
+
+div.parts{
+    margin-top: 30px;
+}
