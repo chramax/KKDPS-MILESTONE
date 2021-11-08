@@ -175,6 +175,7 @@
                 <a href="pc building.html">PC Building advice</a>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     </div>
 
     <!--Tippy import-->
@@ -187,6 +188,7 @@
     <script>
         tippy('#cpuNav', {
             content: 'Central processing unit',
+            delay: 300,
         });
         tippy('#ramNav', {
             content: 'Random access memory',
@@ -210,6 +212,28 @@
             content: 'Power supply unit',
         });
     </script>
+
+    <script>
+        //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.classList.add("shown");
+  } else {
+    mybutton.classList.remove("shown");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </body>
 
 </html>
